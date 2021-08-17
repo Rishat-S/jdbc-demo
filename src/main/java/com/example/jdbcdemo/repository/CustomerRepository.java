@@ -24,6 +24,6 @@ public class CustomerRepository {
     }
 
     public String getProductByName(String name) {
-       return null;
+       return "null";
     }
 }
