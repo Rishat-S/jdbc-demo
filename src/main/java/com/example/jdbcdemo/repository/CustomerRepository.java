@@ -12,7 +12,11 @@ import java.util.stream.Collectors;
 @Repository
 public class CustomerRepository {
 
-    String sqlQuery = read("data.sql");
+    String sqlQuery = read("myscript.sql");
+
+    public String getProductName(String name) {
+       return "null";
+    }
 
     private String read(String scriptFileName) {
         try (InputStream is = new ClassPathResource(scriptFileName).getInputStream();
@@ -21,9 +25,5 @@ public class CustomerRepository {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    public String getProductName(String name) {
-       return "null";
     }
 }
