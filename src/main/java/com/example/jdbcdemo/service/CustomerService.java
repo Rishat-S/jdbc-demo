@@ -9,7 +9,7 @@ public class CustomerService {
     @Autowired
     CustomerRepository customerRepository;
 
-    public String getProductByName(String name) {
-        return customerRepository.getProductByName(name);
+    public String getProductName(String name) {
+        return customerRepository.getProductName(name);
     }
 }

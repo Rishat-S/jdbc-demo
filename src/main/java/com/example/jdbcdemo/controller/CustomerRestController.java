@@ -15,6 +15,6 @@ public class CustomerRestController {
 
     @GetMapping("/fetch-product")
     public String getProductByName(@RequestParam("name") String name) {
-        return customerService.getProductByName(name);
+        return customerService.getProductName(name);
     }
 }

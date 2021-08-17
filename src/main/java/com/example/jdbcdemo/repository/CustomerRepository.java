@@ -23,7 +23,7 @@ public class CustomerRepository {
         }
     }
 
-    public String getProductByName(String name) {
+    public String getProductName(String name) {
        return "null";
     }
 }
